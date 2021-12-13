@@ -1,9 +1,10 @@
-### Hello there! I’m Iuri Dias Zimmermann
+### Hello there! I’m Iuri Dias Zimmermann.
 
-Here are some ideas to get you started:
+These are some information you may want to know about me:
 
 - 🔧 I’m currently working with web development with JS
 - 💻 I’m currently learning Design Patterns with C#
+- 📖 Also, I’m graduated from the technical computer course of IFSC, Câmpus Gaspar (2021), focused on systems development 
 
 <div>
   <a href="https://beacons.ai/iuri-z">
