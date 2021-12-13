@@ -4,7 +4,6 @@ Here are some ideas to get you started:
 
 - 🔧 I’m currently working with web development with JS
 - 💻 I’m currently learning Design Patterns with C#
-- 📃 You can reach me: neediuridz@gmail.com
 
 <div>
   <a href="https://beacons.ai/iuri-z">
@@ -24,5 +23,11 @@ Here are some ideas to get you started:
   <img align="center" alt="Iuri-Mysql" height="30" width="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg">
 </div>
   
+  ##
+  
 <div>
-  <a href="mailto:neediuridz@gmail.com">
+  <a href="mailto:neediuridz@gmail.com" target="_blank"><img src="https://img.shields.io/badge/Gmail-D14836?style=for-the-badge&logo=gmail&logoColor=white" target="_blank"></a>
+  <a href="https://www.instagram.com/iuri.z/" target="_blank"><img src="https://img.shields.io/badge/Instagram-E4405F?style=for-the-badge&logo=instagram&logoColor=white" target="_blank"></a>
+  <a href="https://www.linkedin.com/in/iuri-zimmermann-990ab6218/" target="_blank"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" target="_blank"></a>
+  <a href="https://web.whatsapp.com/send?phone=5547984666032"><img src="https://img.shields.io/badge/WhatsApp-25D366?style=for-the-badge&logo=whatsapp&logoColor=white" target="_blank"></a>
+</div>
