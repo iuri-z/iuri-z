@@ -9,7 +9,7 @@ These are some information you may want to know about me:
 <div>
   <a href="https://beacons.ai/iuri-z">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=iuri-z&show_icons=true&theme+dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iuri-z&layoutshow_icons=true&theme+dark&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iuri-z&layoutshow_icons=true&theme+dracula&include_all_commits=true&count_private=true"/>
 </div>
     
 <div style="display: inline_block"><br>
