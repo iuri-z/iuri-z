@@ -6,6 +6,8 @@ These are some information you may want to know about me:
 - 💻 I’m currently learning Design Patterns with C#
 - 📖 Also, I’m graduated from the technical computer course of IFSC, Câmpus Gaspar (2021), focused on systems development 
 
+##
+
 <div>
   <a href="https://beacons.ai/iuri-z">
   <img height="180em" src="https://github-readme-stats.vercel.app/api?username=iuri-z&show_icons=true&theme+dark&include_all_commits=true&count_private=true"/>
