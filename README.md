@@ -1,17 +1,18 @@
-### Hello there! I’m Iuri Dias Zimmermann.
+### The lunatic is on the grass!
 
-These are some information you may want to know about me:
+Algumas informações relevantes:
 
-- 🔧 I’m currently working with JS web development
-- 💻 I’m currently learning Design Patterns with C#
-- 📖 Also, I’m graduated from the technical computer course of IFSC, Câmpus Gaspar (2021), focused on systems development 
+- 🅱️ Tecnologias Benner 
+- 🗄️ Banco de Dados — SQL Server, MySQL, modelagem e otimização
+- 🟣 Desenvolvimento .NET (C#) — APIs REST, EF Core, automações, arquitetura limpa, manipulação eficiente de dados
+- 📱 Catálogos virtuais, automações e integração entre serviços
 
 ##
 
 <div>
   <a href="https://beacons.ai/iuri-z">
-  <img height="180em" src="https://github-readme-stats.vercel.app/api?username=iuri-z&show_icons=true&theme+dark&include_all_commits=true&count_private=true"/>
-  <img height="180em" src="https://github-readme-stats.vercel.app/api/top-langs/?username=iuri-z&layoutshow_icons=true&theme+dracula&include_all_commits=true&count_private=true"/>
+  <img height="180em" src="http://github-profile-summary-cards.vercel.app/api/cards/repos-per-language?username=iuri-z&theme=github_dark" />
+  <img height="180em" src="http://github-profile-summary-cards.vercel.app/api/cards/profile-details?username=iuri-z&theme=github_dark"/>
 </div>
     
 <div style="display: inline_block"><br>
