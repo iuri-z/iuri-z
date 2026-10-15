@@ -161,12 +161,12 @@ export function Sections() {
       {/* FAQ */}
       <Sec id="faq" k="Perguntas frequentes" title="Dúvidas comuns">
         <div className="border-t border-white/10">
-          <Acc id="faq-prazo" q="Quanto tempo leva um projeto?"><p>Depende do tamanho. Um site simples e um sistema sob medida levam tempos bem diferentes. Eu informo o prazo na proposta, depois de entender o que precisa ser feito. <F>[PREENCHER: prazos típicos]</F></p></Acc>
-          <Acc id="faq-pagamento" q="Como funciona o pagamento e o contrato?"><p>Deixo o combinado por escrito, com escopo, entregas e prazos, antes de começar. Os valores eu converso diretamente com você. <F>[PREENCHER: forma de pagamento, entrada, contrato]</F></p></Acc>
-          <Acc id="faq-codigo" q="De quem é o código?"><p><F>[PREENCHER: regra de propriedade do código e da documentação]</F></p></Acc>
+          <Acc id="faq-prazo" q="Quanto tempo leva um projeto?"><p>Depende do tamanho. Um site simples e um sistema sob medida levam tempos bem diferentes. Como referência, um site de uma página costuma levar de 1 a 3 semanas depois que recebo textos e fotos. Sistemas sob medida e automações levam mais e são divididos em entregas, para você ver o resultado aos poucos. O prazo exato vai na proposta, depois de entender o que precisa ser feito.</p></Acc>
+          <Acc id="faq-pagamento" q="Como funciona o pagamento e o contrato?"><p>Deixo o combinado por escrito, com escopo, entregas e prazos, antes de começar. Os valores eu converso diretamente com você. Em geral, uma parte é paga na aprovação e o restante na entrega; projetos maiores podem ser divididos por etapas. Emito nota fiscal.</p></Acc>
+          <Acc id="faq-codigo" q="De quem é o código?"><p>O que eu desenvolvo especificamente para o seu projeto passa a ser seu depois do pagamento: você recebe o código-fonte e a documentação. Ferramentas e bibliotecas de terceiros, como as de código aberto, mantêm as licenças delas. O domínio fica sempre em nome da sua empresa.</p></Acc>
           <Acc id="faq-fora" q="Atende fora de Santa Catarina?"><p>Sim. Eu moro em Gaspar (SC), mas atendo todo o Brasil, de forma remota, por vídeo, WhatsApp e e-mail.</p></Acc>
-          <Acc id="faq-suporte" q="Como é feito o suporte depois da entrega?"><p>Você fala direto comigo, sem intermediários. Eu também posso cuidar do domínio, da hospedagem e da manutenção do seu site depois de no ar. <F>[PREENCHER: período de garantia, canais e condições]</F></p></Acc>
-          <Acc id="faq-orcamento" q="Como funciona o orçamento?"><p>Você conta o que precisa, eu faço perguntas e devolvo uma proposta com escopo e prazo. <F>[PREENCHER: se é gratuito, validade e como o valor é calculado]</F></p></Acc>
+          <Acc id="faq-suporte" q="Como é feito o suporte depois da entrega?"><p>Você fala direto comigo, sem intermediários. Eu também posso cuidar do domínio, da hospedagem e da manutenção do seu site depois de no ar. O período de garantia e as condições de manutenção são combinados na proposta, conforme o projeto; depois da entrega, a manutenção pode seguir em um plano mensal.</p></Acc>
+          <Acc id="faq-orcamento" q="Como funciona o orçamento?"><p>Você conta o que precisa, eu faço perguntas e devolvo uma proposta com escopo e prazo. O orçamento é gratuito e a proposta vale por 15 dias. O valor depende do tamanho e da complexidade do trabalho e de haver ou não manutenção mensal depois.</p></Acc>
         </div>
       </Sec>
 
