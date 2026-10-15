@@ -183,7 +183,7 @@ export function Sections() {
 
       {/* RODAPÉ */}
       <footer className="grid gap-8 border-t border-white/10 py-12 text-sm text-white/55 md:grid-cols-3">
-        <div className="space-y-1"><p className="text-white">Zimmer Tech</p><p>Responsável: Iuri Zimmermann</p><p>Gaspar, Santa Catarina</p><p>Atendimento remoto para todo o Brasil</p></div>
+        <div className="space-y-1"><img src="/zimmer-tech-logo-claro.png" alt="Zimmer Tech" width={791} height={64} loading="lazy" decoding="async" className="mb-3 h-4 w-auto" /><p>Responsável: Iuri Zimmermann</p><p>Gaspar, Santa Catarina</p><p>Atendimento remoto para todo o Brasil</p></div>
         <div className="space-y-1"><a className="block hover:text-white" href="mailto:contato.zimmtech@gmail.com">contato.zimmtech@gmail.com</a><a className="block hover:text-white" href="https://www.linkedin.com/in/iuri-z" target="_blank" rel="noopener">LinkedIn</a><a className="block hover:text-white" href="https://github.com/iuri-z" target="_blank" rel="noopener">GitHub</a></div>
         <div className="space-y-1"><a className="block hover:text-white" href="/privacidade">Política de privacidade (LGPD)</a><p>©2026 Zimmer Tech</p></div>
       </footer>
