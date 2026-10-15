@@ -1,3 +1,4 @@
+import { BrandLogo } from "./brand-logo";
 import { Search } from "./search";
 
 export function Header() {
@@ -5,7 +6,7 @@ export function Header() {
   return (
     <header className="flex h-16 items-center gap-2 px-4 sm:gap-3 sm:px-6 text-sm">
       <a href="/#inicio" className="flex items-center gap-2 text-white" aria-label="Zimmer Tech, início">
-        <img src="/zimmer-tech-logo-claro.png" alt="Zimmer Tech" width={791} height={64} className="h-3 w-auto sm:h-4" />
+        <BrandLogo className="h-3 sm:h-4" />
       </a>
       <nav aria-label="Principal" className="hidden items-center gap-5 pl-3 md:flex">
         <a className={l} href="/#sobre">Sobre</a>

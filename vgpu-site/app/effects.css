@@ -13,6 +13,20 @@
 .shine:hover{filter:drop-shadow(0 0 18px rgba(125,211,252,.35))}
 @keyframes shine-sweep{to{background-position:0 0,-250% 0}}
 
+/* logo: a parte "TECH" cintila como os títulos, recortada pela forma das letras */
+.shine-logo{
+  --mx:-200%;--my:-200%;
+  background:
+    radial-gradient(circle 2.2em at var(--mx) var(--my),#fff 0,#7dd3fc 30%,#c084fc 55%,transparent 80%),
+    linear-gradient(100deg,#cda076 0%,#fff 20%,#a5f3fc 32%,#f0abfc 44%,#fde68a 56%,#fff 68%,#cda076 100%);
+  background-size:100% 100%,250% 100%;
+  background-position:0 0,0% 0;
+  -webkit-mask:url(/zimmer-tech-logo-tech.png) center/100% 100% no-repeat;
+  mask:url(/zimmer-tech-logo-tech.png) center/100% 100% no-repeat;
+  animation:shine-sweep 7s linear infinite;
+}
+@media (prefers-reduced-motion:reduce){.shine-logo{animation:none}}
+
 /* botão de vidro (glassmorphism) com luz de arco-íris girando por trás */
 @property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
 .glass-btn{

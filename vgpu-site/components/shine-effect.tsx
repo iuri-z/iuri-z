@@ -1,11 +1,11 @@
 "use client";
 import { useEffect } from "react";
 
-/** Faz o realce dos elementos `.shine` e `.spot` seguir o mouse (variáveis CSS --mx/--my). */
+/** Faz o realce dos elementos `.shine`, `.shine-logo` e `.spot` seguir o mouse (variáveis CSS --mx/--my). */
 export function ShineEffect() {
   useEffect(() => {
     const on = (e: PointerEvent) => {
-      const el = (e.target as HTMLElement | null)?.closest<HTMLElement>(".shine, .spot");
+      const el = (e.target as HTMLElement | null)?.closest<HTMLElement>(".shine, .shine-logo, .spot");
       if (!el) return;
       const r = el.getBoundingClientRect();
       el.style.setProperty("--mx", `${((e.clientX - r.left) / r.width) * 100}%`);
