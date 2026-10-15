@@ -9,8 +9,10 @@
     "start": "next start",
     "curriculo": "node scripts/gerar-curriculo.mjs",
     "cf:build": "opennextjs-cloudflare build",
-    "cf:deploy": "opennextjs-cloudflare build && opennextjs-cloudflare deploy",
-    "cf:preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview"
+    "cf:deploy": "node scripts/check-placeholders.mjs && opennextjs-cloudflare build && opennextjs-cloudflare deploy",
+    "cf:preview": "opennextjs-cloudflare build && opennextjs-cloudflare preview",
+    "check:placeholders": "node scripts/check-placeholders.mjs",
+    "audit:prod": "npm audit --omit=dev"
   },
   "dependencies": {
     "@opennextjs/cloudflare": "^1.20.12",
@@ -39,5 +41,10 @@
   "devDependencies": {
     "@webgpu/types": "^0.1.74",
     "wrangler": "^4.151.0"
+  },
+  "overrides": {
+    "@node-minify/core": {
+      "glob": "^10.5.0"
+    }
   }
 }

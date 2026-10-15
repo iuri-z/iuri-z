@@ -2,8 +2,10 @@ import type { Metadata } from "next";
 import type { ReactNode } from "react";
 
 export const metadata: Metadata = {
-  title: "Política de Privacidade | Zimmer Tech",
-  robots: { index: false, follow: false },
+  title: "Política de Privacidade",
+  description: "Como a Zimmer Tech trata os dados de quem entra em contato pelo site, conforme a LGPD.",
+  alternates: { canonical: "/privacidade" },
+  robots: { index: true, follow: true },
 };
 
 const H = ({ children }: { children: ReactNode }) => <h2 className="mt-12 text-2xl font-light tracking-tight text-white">{children}</h2>;

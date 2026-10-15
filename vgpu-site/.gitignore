@@ -3,3 +3,10 @@ node_modules
 
 .open-next
 .wrangler
+
+# segredos e variáveis locais: nunca versionar
+.env
+.env.*
+!.env.example
+.dev.vars
+.dev.vars.*
