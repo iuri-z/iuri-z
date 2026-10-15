@@ -1,0 +1,78 @@
+/* títulos cintilantes: brilho que varre o texto + realce que segue o mouse */
+.shine{
+  --mx:50%;--my:50%;
+  background:
+    radial-gradient(circle 9em at var(--mx) var(--my),#fff 0,#7dd3fc 22%,#c084fc 42%,transparent 70%),
+    linear-gradient(100deg,#d8d8d8 0%,#fff 20%,#a5f3fc 32%,#f0abfc 44%,#fde68a 56%,#fff 68%,#d8d8d8 100%);
+  background-size:100% 100%,250% 100%;
+  background-position:0 0,0% 0;
+  -webkit-background-clip:text;background-clip:text;color:transparent;
+  animation:shine-sweep 7s linear infinite;
+  transition:filter .3s;
+}
+.shine:hover{filter:drop-shadow(0 0 18px rgba(125,211,252,.35))}
+@keyframes shine-sweep{to{background-position:0 0,-250% 0}}
+
+/* botão de vidro (glassmorphism) com luz de arco-íris girando por trás */
+@property --ang{syntax:"<angle>";initial-value:0deg;inherits:false}
+.glass-btn{
+  position:relative;isolation:isolate;overflow:hidden;cursor:pointer;
+  padding:.95rem 1.8rem;border-radius:.75rem;border:0;color:#fff;font-weight:500;font-size:.95rem;
+  background:linear-gradient(135deg,rgba(255,255,255,.18),rgba(255,255,255,.04));
+  backdrop-filter:blur(14px) saturate(1.6);-webkit-backdrop-filter:blur(14px) saturate(1.6);
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.35),0 6px 18px rgba(125,211,252,.18),0 0 0 1px rgba(255,255,255,.12);
+  transition:transform .25s,box-shadow .25s;
+}
+.glass-btn::before{
+  content:"";position:absolute;inset:-60%;z-index:-2;
+  background:conic-gradient(from var(--ang),#22d3ee,#a78bfa,#f472b6,#fbbf24,#34d399,#22d3ee);
+  filter:blur(22px);opacity:.55;animation:glass-spin 6s linear infinite;
+}
+.glass-btn::after{
+  content:"";position:absolute;top:-20%;bottom:-20%;left:-40%;width:35%;z-index:-1;
+  background:linear-gradient(100deg,transparent,rgba(255,255,255,.55),transparent);
+  transform:skewX(-20deg) translateX(-120%);animation:glass-sheen 3.6s ease-in-out infinite;
+}
+.glass-btn>span{position:relative;text-shadow:0 1px 8px rgba(0,0,0,.35)}
+.glass-btn:hover{transform:translateY(-2px) scale(1.03);box-shadow:inset 0 1px 0 rgba(255,255,255,.5),0 8px 24px rgba(167,139,250,.4),0 0 0 1px rgba(255,255,255,.25)}
+.glass-btn:hover::before{opacity:.85;animation-duration:2.5s}
+.glass-btn:active{transform:scale(.98)}
+.glass-btn:focus-visible{outline:2px solid #fff;outline-offset:3px}
+@keyframes glass-spin{to{--ang:360deg}}
+@keyframes glass-sheen{0%,55%{transform:skewX(-20deg) translateX(-120%)}100%{transform:skewX(-20deg) translateX(520%)}}
+
+@media (prefers-reduced-motion:reduce){
+  .shine{animation:none}
+  .glass-btn::before,.glass-btn::after{animation:none}
+}
+
+/* revelar ao rolar */
+.reveal{transition:opacity .8s cubic-bezier(.2,.7,.2,1),transform .8s cubic-bezier(.2,.7,.2,1)}
+.reveal[data-reveal="hidden"]{opacity:0;transform:translateY(28px)}
+.reveal[data-reveal="hidden"][data-from="left"]{transform:translateX(-36px)}
+.reveal[data-reveal="hidden"][data-from="right"]{transform:translateX(36px)}
+
+/* cartões com holofote que segue o mouse */
+.spot{position:relative}
+.spot::before{content:"";position:absolute;inset:0;opacity:0;pointer-events:none;transition:opacity .3s;
+  background:radial-gradient(280px circle at var(--mx,50%) var(--my,50%),rgba(255,255,255,.09),transparent 70%)}
+.spot:hover::before{opacity:1}
+
+/* cartão de chamada com luz girando */
+.cta-tile{position:relative;isolation:isolate;overflow:hidden;background:#050505}
+.cta-tile::before{content:"";position:absolute;inset:-70%;z-index:-2;
+  background:conic-gradient(from var(--ang),#22d3ee,#a78bfa,#f472b6,#fbbf24,#34d399,#22d3ee);
+  filter:blur(40px);opacity:.28;animation:glass-spin 9s linear infinite}
+.cta-tile::after{content:"";position:absolute;inset:1px;z-index:-1;background:rgba(0,0,0,.78)}
+.cta-tile:hover::before{opacity:.5;animation-duration:4s}
+
+@media (prefers-reduced-motion:reduce){
+  .reveal{transition:none}
+  .cta-tile::before{animation:none}
+}
+
+/* cartão de vidro e linha do tempo */
+.glass-card{background:linear-gradient(135deg,rgba(255,255,255,.09),rgba(255,255,255,.02));border:1px solid rgba(255,255,255,.14);
+  backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);box-shadow:inset 0 1px 0 rgba(255,255,255,.2),0 20px 60px rgba(125,211,252,.07)}
+.timeline .tl-dot{transition:background .3s,box-shadow .3s}
+.timeline li:hover .tl-dot{background:#7dd3fc;box-shadow:0 0 14px #7dd3fc}
